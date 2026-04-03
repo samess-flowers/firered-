@@ -619,6 +619,35 @@ bool8 CanUseEscapeRopeOnCurrMap(void)
         return FALSE;
 }
 
+void ItemUseOutOfBattle_ExpShare(u8 taskId)
+{
+    if (!gSaveBlock2Ptr->expShare)
+    {
+        PlaySE(SE_PC_ON);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+        {
+            DisplayItemMessageOnField(taskId, FONT_NORMAL, gOtherText_ExpShareOn, Task_ItemUse_CloseMessageBoxAndReturnToField);
+        }
+        else
+        {
+            DisplayItemMessageInBag(taskId, 1, gOtherText_ExpShareOn, Task_ReturnToBagFromContextMenu);
+        }
+    }
+    else
+    {
+        PlaySE(SE_PC_OFF);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+        {
+            DisplayItemMessageOnField(taskId, FONT_NORMAL, gOtherText_ExpShareOff, Task_ItemUse_CloseMessageBoxAndReturnToField);
+        }
+        else
+        {
+            DisplayItemMessageInBag(taskId, 1, gOtherText_ExpShareOff, Task_ReturnToBagFromContextMenu);
+        }
+    }
+    gSaveBlock2Ptr->expShare = !gSaveBlock2Ptr->expShare;
+}
+
 void ItemUseOutOfBattle_EscapeRope(u8 taskId)
 {
     if (CanUseEscapeRopeOnCurrMap() == TRUE)
