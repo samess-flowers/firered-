@@ -266,7 +266,7 @@
       "elevation": 3,
       "item": "ITEM_PINAP_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE14_PINAP_BERRY",
-      "quantity": 1,
+      "quantity": 100,
       "underfoot": false
     }
   ]

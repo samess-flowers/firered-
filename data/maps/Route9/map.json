@@ -234,7 +234,7 @@
       "elevation": 3,
       "item": "ITEM_CHESTO_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE9_CHESTO_BERRY",
-      "quantity": 1,
+      "quantity": 100,
       "underfoot": false
     }
   ]
