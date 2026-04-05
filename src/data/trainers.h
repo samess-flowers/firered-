@@ -1040,7 +1040,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_BugCatcherSammy),
+        .party = ITEM_DEFAULT_MOVES(sParty_BugCatcherSammy),
     },
     [TRAINER_BUG_CATCHER_COLTON] = {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
