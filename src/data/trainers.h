@@ -1400,7 +1400,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_SailorPhillip),
+        .party = ITEM_DEFAULT_MOVES(sParty_SailorPhillip),
     },
     [TRAINER_SAILOR_DWAYNE] = {
         .trainerClass = TRAINER_CLASS_SAILOR,
@@ -3560,7 +3560,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_TeamRocketGrunt6),
+        .party = ITEM_DEFAULT_MOVES(sParty_TeamRocketGrunt6),
     },
     [TRAINER_TEAM_ROCKET_GRUNT_7] = {
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
