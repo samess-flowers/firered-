@@ -5595,33 +5595,47 @@ static const struct TrainerMonItemCustomMoves sParty_EliteFourLance[] = {
     },
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_LeaderBrock[] = {
+static const struct TrainerMonItemCustomMoves sParty_LeaderBrock[] = {
     {
-        .iv = 0,
+        .iv = 100,
         .lvl = 12,
         .species = SPECIES_GEODUDE,
-        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_NONE, MOVE_NONE},
+        .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_MUD_SPORT, MOVE_ROCK_TOMB},
     },
     {
-        .iv = 0,
+        .iv = 100,
+        .lvl = 13,
+        .species = SPECIES_SUDOWOODO,
+        .moves = {MOVE_ROCK_THROW, MOVE_MIMIC, MOVE_ROCK_TOMB, MOVE_FLAIL},
+    },
+    {
+        .iv = 100,
         .lvl = 14,
+        .heldItem = ITEM_ORAN_BERRY,
         .species = SPECIES_ONIX,
-        .moves = {MOVE_TACKLE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_NONE},
+        .moves = {MOVE_TACKLE, MOVE_BIND, MOVE_ROCK_TOMB, MOVE_SCREECH},
     },
 };
 
-static const struct TrainerMonNoItemCustomMoves sParty_LeaderMisty[] = {
+static const struct TrainerMonItemCustomMoves sParty_LeaderMisty[] = {
     {
-        .iv = 0,
+        .iv = 100,
         .lvl = 18,
-        .species = SPECIES_STARYU,
-        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_RECOVER, MOVE_WATER_PULSE},
+        .species = SPECIES_SEEL,
+        .moves = {MOVE_WATER_PULSE, MOVE_HEADBUTT, MOVE_GROWL, MOVE_ICY_WIND},
     },
     {
-        .iv = 0,
+        .iv = 100,
+        .lvl = 19,
+        .species = SPECIES_CORSOLA,
+        .moves = {MOVE_REFRESH, MOVE_HARDEN, MOVE_RECOVER, MOVE_WATER_PULSE},
+    },
+    {
+        .iv = 100,
         .lvl = 21,
+        .heldItem = ITEM_SITRUS_BERRY,
         .species = SPECIES_STARMIE,
-        .moves = {MOVE_SWIFT, MOVE_RECOVER, MOVE_RAPID_SPIN, MOVE_WATER_PULSE},
+        .moves = {MOVE_CAMOUFLAGE, MOVE_RECOVER, MOVE_RAPID_SPIN, MOVE_WATER_PULSE},
     },
 };
 
