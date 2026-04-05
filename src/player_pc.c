@@ -100,6 +100,7 @@ static const struct MenuAction sMenuActions_ItemPc[] = {
 // Updated with cheat items
 static const struct ItemSlot gNewGamePCItems[] = {
     { ITEM_RARE_CANDY, 99 },
+    { ITEM_TM27, 1 },
     { ITEM_POKE_BALL, 99 },
     { ITEM_NUGGET, 99 },
     { ITEM_METAL_COAT, 5 },
