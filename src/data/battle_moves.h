@@ -523,7 +523,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_POISON_STING] =
             {
                 .effect = EFFECT_POISON_HIT,
-                .power = 15,
+                .power = 20,
                 .type = TYPE_POISON,
                 .accuracy = 100,
                 .pp = 35,
@@ -861,7 +861,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_SUBMISSION] =
             {
                 .effect = EFFECT_RECOIL,
-                .power = 80,
+                .power = 150,
                 .type = TYPE_FIGHTING,
                 .accuracy = 80,
                 .pp = 25,
@@ -1836,7 +1836,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_LEECH_LIFE] =
             {
                 .effect = EFFECT_ABSORB,
-                .power = 20,
+                .power = 80,
                 .type = TYPE_BUG,
                 .accuracy = 100,
                 .pp = 15,
@@ -2187,7 +2187,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_THIEF] =
             {
                 .effect = EFFECT_THIEF,
-                .power = 40,
+                .power = 60,
                 .type = TYPE_DARK,
                 .accuracy = 100,
                 .pp = 10,
@@ -3669,7 +3669,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         [MOVE_KNOCK_OFF] =
             {
                 .effect = EFFECT_KNOCK_OFF,
-                .power = 20,
+                .power = 60,
                 .type = TYPE_DARK,
                 .accuracy = 100,
                 .pp = 20,
